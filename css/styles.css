@@ -1,7 +1,7 @@
 :root {
   /* font*/
-  --main-font: 'Roboto';
-  --second-font: 'Raleway';
+  --main-font: 'Roboto', sans-serif;
+  --second-font: 'Raleway', sans-serif;
   /* text color*/
   --main-txt-color: #212121;
   /* bg color*/
@@ -12,11 +12,9 @@
   --active-button-color: #2196f3;
 }
 
-li {
-  cursor: pointer;
-}
-
-button {
+.button2,
+.button1,
+.nav1 {
   cursor: pointer;
 }
 
@@ -56,11 +54,11 @@ body {
 
 .nav1 {
   font-weight: 500;
-font-size: 14px;
-line-height: 16px;
-letter-spacing: 0.02em;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
 
-color: #212121;;
+  color: #212121;
 }
 
 a {
@@ -80,13 +78,12 @@ a {
 }
 
 .contact:hover {
-    color: var(--active-button-color);
-  }
-  
-  .contact:focus {
-    color: var(--active-button-color);
-  }
-  
+  color: var(--active-button-color);
+}
+
+.contact:focus {
+  color: var(--active-button-color);
+}
 
 .nav1:hover {
   color: var(--active-button-color);
@@ -98,10 +95,10 @@ a {
 
 .nav-current {
   color: var(--active-button-color);
-  
 }
 .nav-current2 {
-color: var(--active-button-color);}
+  color: var(--active-button-color);
+}
 /**MAIN 1 */
 
 .main-window {
@@ -143,7 +140,7 @@ color: var(--active-button-color);}
 .secondH-item {
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
@@ -157,12 +154,11 @@ color: var(--active-button-color);}
   color: #757575;
 }
 .headline-section {
-font-weight: 700;
-font-size: 36px;
-line-height: 42px;
-text-align: center;
-letter-spacing: 0.03em;
-
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 /*Team*/
@@ -224,14 +220,15 @@ footer {
   letter-spacing: 0.03em;
   color: #ffffff;
 }
-.contact2 { font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: calc (24/14);
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-  }
+.contact2 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc (24/14);
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
 
 .contact2:hover {
   color: var(--active-button-color);
@@ -242,37 +239,52 @@ footer {
 }
 
 /*Portfolio*/
-.button2{font-family: 'Roboto';
-    font-style: normal;font-style:normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #212121}
-.button2:hover{background: #2196F3;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px; color: #FFFFFF}
-.button2:focus{background: #2196F3;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px; color: #FFFFFF}
-.button-current{background: #2196F3;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px; color: #FFFFFF;}
+.button2 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.button2:hover {
+  background: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  color: #ffffff;
+}
+.button2:focus {
+  background: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  color: #ffffff;
+}
+.button-current {
+  background: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  color: #ffffff;
+}
 
-.position-name{font-weight: 700;
-    font-size: 18px;
-    line-height: 36px;
-    letter-spacing: 0.06em;
-    color: #212121;}
+.position-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
 
-.position-type{ font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 30px;
-    /* identical to box height, or 188% */
-    
-    letter-spacing: 0.03em;
-    
-    color: #757575;
-    }
+.position-type {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
